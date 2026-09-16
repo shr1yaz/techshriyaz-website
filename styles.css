@@ -4,46 +4,113 @@
     padding: 0;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    height: 350px;
-    gap: 40px;
+body{
+    font-family: 'Inter', sans-serif;
 }
 
+.intro{
+    background: linear-gradient(90deg, #cdfaf4, #bf98f5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
+  font-size: 90px;
+}
+
+.intro-text{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 200px;
+    height: 400px;
+    gap: 100px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 20% 50%,
+            rgba(168, 85, 247, 0.25),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(192, 132, 252, 0.20),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at 70% 80%,
+            rgba(109, 40, 217, 0.15),
+            transparent 35%
+        ),
+
+        #020202;
+
+    min-height: 400px;
+}
+
+
 .pfp{
-    width: 260px;
+    width: 280px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav{
     display: flex;
-    padding-left: 8px;
+    padding-left: 12px;
     gap: 13px;
     align-items: center;
-    height: 40px;
+    height: 60px;
     padding: none;
+    background: black;
+
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+
+    position: relative;
+    z-index: 10;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    font-weight: 550;
+
+  color: white;
+  font-size: 18px;
+}
+
+a:hover{
+    background: linear-gradient(90deg, #d1f7f2, #bf98f5);
+    font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
+  transition: 0.2s;
 }
 
 .nav-right{
     margin-left: auto;
-    padding-right: 0px;
+    padding-right: 8px;
     display: flex;
     gap: 0px;
     height: 100%;
 }
 
 .right-btn{
-    font-weight: bold;
     height: 100%;
     display: flex;
     align-items: center;
@@ -52,8 +119,15 @@ a{
 
 .right-btn:hover{
     transition: 0.2s;
-    color: white;
     background-color: black;
+    background-image: linear-gradient(90deg, #ffffff, #a7cff7);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+    
 }
 
 .icon{
@@ -62,4 +136,15 @@ a{
 
 .tiktok{
     width: 29px;
+}
+
+p{
+    background-image: linear-gradient(90deg, #ffffff, #a7cff7);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+    font-size: 26px;
 }

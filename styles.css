@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 350px;
+    gap: 40px;
+}
+
+.pfp{
+    width: 260px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    padding-left: 10px;
+    gap: 13px;
+    align-items: center;
+    height: 40px;
+}
+.icon{
+    width: 30px;
+}
+
+.tiktok{
+    width: 29px;
+}

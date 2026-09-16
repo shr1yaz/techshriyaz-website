@@ -22,11 +22,40 @@ header{
 
 nav{
     display: flex;
-    padding-left: 10px;
+    padding-left: 8px;
     gap: 13px;
     align-items: center;
     height: 40px;
+    padding: none;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right{
+    margin-left: auto;
+    padding-right: 0px;
+    display: flex;
+    gap: 0px;
+    height: 100%;
+}
+
+.right-btn{
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.right-btn:hover{
+    transition: 0.2s;
+    color: white;
+    background-color: black;
+}
+
 .icon{
     width: 30px;
 }

@@ -73,7 +73,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     height: 100%;
     margin-bottom: 10px;
     justify-content: center;
@@ -85,7 +86,8 @@ body{
 
 .center-stuff{
     display: flex;
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
     height: 100%;
     align-items: flex-end;
 }
@@ -120,6 +122,38 @@ header{
         #020202;
 
     min-height: 400px;
+}
+
+#about{
+    gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 80px;
+    min-height: 400px;
+    position: relative;
+    overflow: visible;
+    background:
+        radial-gradient(
+            circle at 20% 50%,
+            rgba(168, 85, 247, 0.25),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(192, 132, 252, 0.20),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at 70% 80%,
+            rgba(109, 40, 217, 0.15),
+            transparent 35%
+        ),
+
+        #020202;
 }
 
 
@@ -206,7 +240,7 @@ a:hover{
     z-index: 2;
 }
 
-p{
+.header-subtext{
     background-image: linear-gradient(90deg, #ffffff, #a7cff7);
 
     -webkit-background-clip: text;
@@ -252,4 +286,114 @@ p{
     width: 350px;
     height: 200px;
     background: rgba(168, 85, 247, 0.03);
+}
+
+#projects{
+    height: 500px;
+}
+
+.projects-header{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(30deg, #000000, #ff8ff8);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    background-clip: text;
+    color: transparent;
+}
+
+.projects-txt{
+    height: 40%;
+    padding-left: 40px;
+}
+
+.about-p{
+    background: linear-gradient(110deg, #e6f7f4, #c2a1f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 20px;
+  background-clip: text;
+  color: transparent;
+}
+
+
+p{
+    font-size: 20px;
+}
+
+iframe{
+    max-width: 500px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
+    margin: 0;
+}
+
+.video-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1{
+    font-size: 65px;
+    font-weight: 500;
+    background-image: linear-gradient(110deg, #e2f6f7dd, #c379ff);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+}
+
+.about-txt{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    max-width: 500px;
+    width: 100%;
+    margin-top: -15px;
+}
+
+@media (max-width: 1000px){
+
+    #about{
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+        padding: 60px 40px;
+    }
+
+    .center-stuff{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .intro{
+        font-size: 60px;
+    }
+
+    .name{
+        font-size: 80px;
+    }
+
+    .pfp{
+        height: 250px;
+    }
+
+    header{
+        padding: 0 40px;
+        height: auto;
+        min-height: 600px;
+    }
 }
